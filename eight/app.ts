@@ -25,3 +25,15 @@ console.log(person)
 
 person.printAge(30)
 person.setGender('女')
+
+
+
+// 子类
+class Student extends Person {
+  constructor(name: string, gender: string, username: string) {
+    super(name, gender, username)
+  }
+}
+
+const stu = new Student('cj', '男', 'cjw')
+console.log(stu)
